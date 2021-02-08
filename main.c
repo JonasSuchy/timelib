@@ -83,18 +83,21 @@ int day_of_the_year(int day, int month, int year)
     return zaehler;
 }
 
+void input_date(int *day, int *month, int *year)
+{
+    printf("Geben Sie das Jahr ein\n");
+    scanf("%i",year);
+    printf("Geben Sie den Monat ein\n");
+    scanf("%i",month);
+    printf("Geben Sie den Tag ein\n");
+    scanf("%i",day);
+}
+
 int main()
 {
     int Jahr, Monat, Tag;
-    int Zaehler = 0;
 
-    int tage_pro_Monat[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
-    printf("Geben Sie das Jahr ein\n");
-    scanf("%i",&Jahr);
-    printf("Geben Sie den Monat ein\n");
-    scanf("%i",&Monat);
-    printf("Geben Sie den Tag ein\n");
-    scanf("%i",&Tag);
+    input_date(&Tag, &Monat, &Jahr);
 
     int tage = day_of_the_year(Tag, Monat, Jahr);
 
