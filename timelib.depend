@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1615306621 source:c:\users\jonas\timelib\main.c
+	<stdio.h>
+	<stdlib.h>
+	<myTimeLib.h>
+
+1615212174 source:c:\users\jonas\timelib\src\mytimelib.cpp
+	"myTimeLib.h"
+
+1615306262 c:\users\jonas\timelib\include\mytimelib.h
+
+1615306431 source:c:\users\jonas\timelib\src\mytimelib.c
+
